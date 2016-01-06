@@ -9,19 +9,45 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *priceTextField;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property double caTax;
+@property double chiTax;
+@property double nyTax;
 
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    _caTax = .075;
+    _chiTax = .0925;
+    _nyTax = .045;
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
+- (IBAction)onCalculateButtonTapped:(id)sender {
+    double input = [_priceTextField.text intValue];
+    
+    switch (_segmentedControl.selectedSegmentIndex) {
+      
+        case 0: {
+            double tax = _caTax;
+            _resultLabel.text = [NSString stringWithFormat:@"%.2f", (input * tax)];
+            break;
+        }
+        case 1: {
+            double tax = _chiTax;
+            _resultLabel.text = [NSString stringWithFormat:@"%.2f", (input * tax)];
+            break;
+        }
+        case 2: {
+            double tax = _nyTax;
+            _resultLabel.text = [NSString stringWithFormat:@"%.2f", (input * tax)];
+            break;
+        }
+    }
+}
 @end

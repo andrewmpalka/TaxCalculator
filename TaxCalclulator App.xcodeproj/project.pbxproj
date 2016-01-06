@@ -417,6 +417,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mobile-Makers.TaxCalclulator-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -428,6 +429,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mobile-Makers.TaxCalclulator-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -498,6 +500,7 @@
 				7B62899C1C3C461300A56EC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B62899D1C3C461300A56EC5 /* Build configuration list for PBXNativeTarget "TaxCalclulator AppTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +509,7 @@
 				7B62899F1C3C461300A56EC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B6289A01C3C461300A56EC5 /* Build configuration list for PBXNativeTarget "TaxCalclulator AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +518,7 @@
 				7B6289A21C3C461300A56EC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
